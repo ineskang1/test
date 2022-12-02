@@ -1,0 +1,90 @@
+<meta charset="utf-8">
+
+<style>
+  body {
+  	cursor: crosshair;
+    padding-left: 20px;
+  }
+  
+  h1 {
+    font-family: helvetica, sans-serif;
+    font-size: 80px;
+  }
+  
+	#about {
+		font-size: 50px;
+    padding-top: 15px;
+    padding-right: 25px;
+    float: right;
+  }
+  
+	ol {
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  li {
+    display: inline;
+    color: blue;
+  }
+  
+  .highlight:hover span .dropdown-content {
+    display: block;
+  }
+  
+  .highlight {
+    color: black;
+  }
+  
+  .highlight:hover {
+    color: #FFFFFF;
+    background-color: blue;
+  }
+
+
+  
+</style>
+
+
+<head>
+  <title>homepage</title>
+</head>
+
+<!-- <body>
+  <h1>my-homepage<span id="about">?</span></h1>
+  <div class="menu">
+		<ol>
+      <li>(01) <span onclick="openDropdown()" class="highlight">daily tasks</span></li>
+				<div class="dropdowncontent">
+					<img src="test.gif" alt="Cinque Terre" width="300" height="200">
+				</div>
+      <li>(02) <span class="highlight">weekly schedule</span></li>
+      <li>(03) <span class="highlight"> </span></li>
+		</ol>
+	</div> -->
+
+<body>
+  <h1>my-homepage<span id="about">?</span></h1>
+  <div class="menu">
+    <button onclick="myFunction()" id="clicker">(01) <span class="highlight">daily tasks</span></button>
+			<div class="dropdowncontent" id="gos">
+				<img src="test.gif" alt="Cinque Terre" width="300" height="200">
+			</div>
+    <button>(02) <span onclick="openDropdown()" class="highlight">weekly sched</span></button>
+	</div>
+  
+<script>
+	function myFunction() {
+  	let x = document.getElementById("myDIV");
+  	if (x.style.display === "none") {
+    x.style.display = "block";
+  	} else {
+    x.style.display = "none";
+  	}
+}
+</script>
+</body>
